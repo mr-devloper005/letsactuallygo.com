@@ -6,6 +6,7 @@ import type { CSSProperties } from 'react'
 import { ArrowUpRight } from 'lucide-react'
 import { SITE_CONFIG } from '@/lib/site-config'
 import { globalContent } from '@/editable/content/global.content'
+import { slot4BrandConfig } from '@/editable/theme/brand.config'
 import { useEditableLocalAuthSession } from '@/editable/components/EditableLocalAuthForms'
 
 export function EditableFooter() {
@@ -31,7 +32,7 @@ export function EditableFooter() {
             </span>
             <span>
               <span className="block text-2xl font-black uppercase tracking-[0.16em]">{SITE_CONFIG.name}</span>
-              <span className="block text-[10px] font-black uppercase tracking-[0.34em] text-[#bfa989]">{globalContent.site.tagline}</span>
+              <span className="block text-[10px] font-black uppercase tracking-[0.34em] text-[#bfa989]">{slot4BrandConfig.tagline}</span>
             </span>
           </Link>
           <p className="mt-5 max-w-md text-sm leading-8 text-white/68">{globalContent.footer.description}</p>
