@@ -3,12 +3,11 @@ import { slot4BrandConfig } from '@/editable/theme/brand.config'
 export const globalContent = {
   site: {
     name: slot4BrandConfig.siteName,
-    tagline: slot4BrandConfig.tagline || 'Curated discovery and collected reads',
     domain: slot4BrandConfig.domain,
     baseUrl: slot4BrandConfig.baseUrl,
   },
   nav: {
-    tagline: 'Curated discovery and collected reads',
+    
     utility: ['', ``],
     primaryLinks: [
       { label: 'Home', href: '/' },

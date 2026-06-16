@@ -1,7 +1,6 @@
 export const siteIdentity = {
   code: process.env.NEXT_PUBLIC_SITE_CODE || 'mysterycoder',
   name: process.env.NEXT_PUBLIC_SITE_NAME || 'Mystery Coder',
-  tagline: process.env.NEXT_PUBLIC_SITE_TAGLINE || 'Business listing platform',
   description:
     process.env.NEXT_PUBLIC_SITE_DESCRIPTION ||
     'A listing-first business discovery platform for browsing services, businesses, spaces, and location-based opportunities through a cleaner browsing experience.',
