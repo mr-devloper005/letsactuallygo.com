@@ -1,7 +1,7 @@
 export const siteIdentity = {
   code: process.env.NEXT_PUBLIC_SITE_CODE || 'mysterycoder',
   name: process.env.NEXT_PUBLIC_SITE_NAME || 'Mystery Coder',
-  tagline: process.env.NEXT_PUBLIC_SITE_TAGLINE || 'Independent reading platform',
+  tagline: process.env.NEXT_PUBLIC_SITE_TAGLINE || 'Business listing platform',
   description:
     process.env.NEXT_PUBLIC_SITE_DESCRIPTION ||
     'A listing-first business discovery platform for browsing services, businesses, spaces, and location-based opportunities through a cleaner browsing experience.',
@@ -16,3 +16,4 @@ export const defaultAuthorProfile = {
   name: siteIdentity.name,
   avatar: '/placeholder.svg?height=80&width=80',
 } as const
+
