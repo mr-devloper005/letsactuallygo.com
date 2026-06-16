@@ -57,7 +57,7 @@ export function EditableNavbar() {
             </span>
             <span className="hidden sm:block">
               <span className="block text-2xl font-black uppercase tracking-[0.16em]">{SITE_CONFIG.name}</span>
-              <span className="block text-[10px] font-black uppercase tracking-[0.34em] text-[var(--editable-nav-muted)]">{globalContent.site.tagline}</span>
+              <span className="block text-[10px] font-black uppercase tracking-[0.34em] text-[var(--editable-nav-muted)]">{globalContent.footer.tagline}</span>
             </span>
           </Link>
 
