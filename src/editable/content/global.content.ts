@@ -3,6 +3,7 @@ import { slot4BrandConfig } from '@/editable/theme/brand.config'
 export const globalContent = {
   site: {
     name: slot4BrandConfig.siteName,
+    tagline: slot4BrandConfig.tagline,
     domain: slot4BrandConfig.domain,
     baseUrl: slot4BrandConfig.baseUrl,
   },
@@ -21,7 +22,6 @@ export const globalContent = {
     },
   },
   footer: {
-    tagline: 'Collected links, useful reading, and visual discovery',
     description: 'Discover, save, and share the web’s most valuable content in one organized place. Our social bookmarking platform helps users collect articles, websites, resources, tools, images, and links while exploring curated discoveries from a growing community. Find inspiration, track useful content, and connect with people who share your interests.',
     columns: [
       {

@@ -41,7 +41,7 @@ export function EditableNavbar() {
           <div className="flex flex-wrap items-center gap-3 text-white/72">
             <span>{globalContent.nav.utility?.[0] || ''}</span>
             <span className="hidden h-3 w-px bg-white/18 sm:block" />
-            <span>{globalContent.nav.utility?.[1] || ''}</span>
+           
           </div>
           <div className="hidden items-center gap-3 text-white/72 md:flex">
            
@@ -57,7 +57,7 @@ export function EditableNavbar() {
             </span>
             <span className="hidden sm:block">
               <span className="block text-2xl font-black uppercase tracking-[0.16em]">{SITE_CONFIG.name}</span>
-              <span className="block text-[10px] font-black uppercase tracking-[0.34em] text-[var(--editable-nav-muted)]">{globalContent.footer.tagline}</span>
+              
             </span>
           </Link>
 
