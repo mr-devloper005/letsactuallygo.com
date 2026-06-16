@@ -4,7 +4,7 @@ import { ArrowRight, Bookmark, BriefcaseBusiness, Building2, Camera, Download, F
 import { buildTaskMetadata } from '@/lib/seo'
 import { CATEGORY_OPTIONS, normalizeCategory } from '@/lib/categories'
 import { fetchPaginatedTaskPosts, buildPostUrl } from '@/lib/task-data'
-import { getTaskConfig, SITE_CONFIG, type TaskKey } from '@/lib/site-config'
+import { getTaskConfig, type TaskKey } from '@/lib/site-config'
 import type { SiteFeedPagination, SitePost } from '@/lib/site-connector'
 import { taskPageMetadata } from '@/config/site.content'
 import { taskPageVoices } from '@/editable/content/task-pages.content'
@@ -85,11 +85,9 @@ export async function EditableTaskArchiveRoute({
 }
 
 export function TaskArchiveView({ task, posts, pagination, category, basePath }: { task: TaskKey; posts: SitePost[]; pagination: SiteFeedPagination; category: string; basePath: string }) {
-  const taskConfig = getTaskConfig(task)
   const voice = taskPageVoices[task]
   const preset = getVisualPreset(visualSystem.recommendedPreset as any)
   const page = pagination.page || 1
-  const label = taskConfig?.label || task
   const deck = taskDeck[task]
   const Icon = deck.icon
   const archiveVars = {
