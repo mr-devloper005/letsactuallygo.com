@@ -41,7 +41,7 @@ export function EditableNavbar() {
           <div className="flex flex-wrap items-center gap-3 text-white/72">
             <span>{globalContent.nav.utility?.[0] || ''}</span>
             <span className="hidden h-3 w-px bg-white/18 sm:block" />
-            <span>{globalContent.nav.utility?.[1] || ''}</span>
+           
           </div>
           <div className="hidden items-center gap-3 text-white/72 md:flex">
            
