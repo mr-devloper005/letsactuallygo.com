@@ -7,7 +7,7 @@ const productKind = getProductKind(recipe)
 
 export const slot4BrandConfig = {
   siteName: siteIdentity.name,
-  tagline: siteIdentity.tagline,
+  tagline: 'Independent reading platform',
   domain: siteIdentity.domain,
   baseUrl: siteIdentity.url,
   productKind,
