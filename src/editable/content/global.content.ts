@@ -21,7 +21,6 @@ export const globalContent = {
     },
   },
   footer: {
-    tagline: 'Collected links, useful reading, and visual discovery',
     description: 'Discover, save, and share the web’s most valuable content in one organized place. Our social bookmarking platform helps users collect articles, websites, resources, tools, images, and links while exploring curated discoveries from a growing community. Find inspiration, track useful content, and connect with people who share your interests.',
     columns: [
       {

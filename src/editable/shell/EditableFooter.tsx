@@ -32,7 +32,7 @@ export function EditableFooter() {
             </span>
             <span>
               <span className="block text-2xl font-black uppercase tracking-[0.16em]">{SITE_CONFIG.name}</span>
-              <span className="block text-[10px] font-black uppercase tracking-[0.34em] text-[#bfa989]">{slot4BrandConfig.tagline}</span>
+              <span className="block text-[10px] font-black uppercase tracking-[0.34em] text-[#bfa989]">{globalContent.site.tagline}</span>
             </span>
           </Link>
           <p className="mt-5 max-w-md text-sm leading-8 text-white/68">{globalContent.footer.description}</p>
