@@ -137,7 +137,7 @@ export function EditableStoryRail({ primaryTask, primaryRoute, posts }: HomeSect
             </div>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href={pagesContent.home.intro.primaryLink.href} className={dc.button.light}><Plus className="h-4 w-4" /> {pagesContent.home.intro.primaryLink.label}</Link>
-              <Link href={pagesContent.home.intro.secondaryLink.href} className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-[0.24em] text-[var(--slot4-accent-fill)]">{pagesContent.home.intro.secondaryLink.label}</Link>
+              {pagesContent.home.intro.secondaryLink.label ? <Link href={pagesContent.home.intro.secondaryLink.href} className="inline-flex items-center gap-2 text-sm font-black uppercase tracking-[0.24em] text-[var(--slot4-accent-fill)]">{pagesContent.home.intro.secondaryLink.label}</Link> : null}
             </div>
           </div>
 
