@@ -36,18 +36,15 @@ export function EditableNavbar() {
 
   return (
     <header style={navVars} className="sticky top-0 z-50 text-[var(--editable-nav-text)]">
-      <div className="border-b border-[var(--editable-nav-border)] bg-black px-4 py-3 text-[10px] font-black uppercase tracking-[0.24em] sm:px-6 lg:px-8">
-        <div className="mx-auto flex max-w-[var(--editable-container)] flex-wrap items-center justify-between gap-3">
-          <div className="flex flex-wrap items-center gap-3 text-white/72">
-            <span>{globalContent.nav.utility?.[0] || ''}</span>
-            <span className="hidden h-3 w-px bg-white/18 sm:block" />
-           
-          </div>
-          <div className="hidden items-center gap-3 text-white/72 md:flex">
-           
+      {globalContent.nav.utility?.some((item) => item) ? (
+        <div className="border-b border-[var(--editable-nav-border)] bg-black px-4 py-3 text-[10px] font-black uppercase tracking-[0.24em] sm:px-6 lg:px-8">
+          <div className="mx-auto flex max-w-[var(--editable-container)] flex-wrap items-center justify-between gap-3">
+            <div className="flex flex-wrap items-center gap-3 text-white/72">
+              <span>{globalContent.nav.utility?.[0] || ''}</span>
+            </div>
           </div>
         </div>
-      </div>
+      ) : null}
 
       <nav className="border-b border-white/8 bg-[var(--editable-nav-bg)]/96 backdrop-blur-xl">
         <div className="mx-auto grid min-h-[88px] max-w-[var(--editable-container)] grid-cols-[auto_1fr_auto] items-center gap-4 px-4 sm:px-6 lg:px-8">
@@ -57,7 +54,7 @@ export function EditableNavbar() {
             </span>
             <span className="hidden sm:block">
               <span className="block text-2xl font-black uppercase tracking-[0.16em]">{SITE_CONFIG.name}</span>
-              <span className="block text-[10px] font-black uppercase tracking-[0.34em] text-[var(--editable-nav-muted)]">{globalContent.footer.tagline}</span>
+              <span className="block text-[10px] font-black uppercase tracking-[0.34em] text-[var(--editable-nav-muted)]">{globalContent.site.tagline}</span>
             </span>
           </Link>
 

@@ -6,7 +6,6 @@ import type { CSSProperties } from 'react'
 import { ArrowUpRight } from 'lucide-react'
 import { SITE_CONFIG } from '@/lib/site-config'
 import { globalContent } from '@/editable/content/global.content'
-import { slot4BrandConfig } from '@/editable/theme/brand.config'
 import { useEditableLocalAuthSession } from '@/editable/components/EditableLocalAuthForms'
 
 export function EditableFooter() {
@@ -24,7 +23,7 @@ export function EditableFooter() {
 
   return (
     <footer style={footerVars} className="border-t border-white/8 bg-[var(--editable-footer-bg)] text-[var(--editable-footer-text)]">
-      <div className="mx-auto grid max-w-[var(--editable-container)] gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.3fr_1fr_1fr_0.9fr] lg:px-8">
+      <div className="mx-auto grid max-w-[var(--editable-container)] gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.3fr_1fr_0.9fr] lg:px-8">
         <div>
           <Link href="/" className="inline-flex items-center gap-3">
             <span className="flex h-12 w-12 items-center justify-center border border-white/12 bg-white text-[#0f1217]">
