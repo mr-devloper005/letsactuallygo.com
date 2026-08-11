@@ -26,7 +26,7 @@ export const pagesContent = {
         'The result is a browsing experience that feels more intentional, more visual, and easier to trust at a glance.',
       ],
       primaryLink: { label: 'Explore collections', href: '/sbm' },
-      secondaryLink: { label: '', href: '/article' },
+      secondaryLink: { label: '', href: '' },
     },
     cta: {
       badge: 'Stay in motion',
